@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2005 Apple Computer, Inc. All rights reserved.
+ * Copyright (c) 2001-2005 Apple Computer, Inc. All rights reserved.
  *
  * @APPLE_LICENSE_HEADER_START@
  * 
@@ -20,13 +20,9 @@
  * 
  * @APPLE_LICENSE_HEADER_END@
  */
+
 /*
  *  HighLevelDirServices.h
- *  DirTesting
- *
- *  Created by fhill on Mon Nov 05 2001.
- *  Copyright (c) 2001 Apple Computer, Inc. All rights reserved.
- *
  */
 
 #ifndef _HIGHLEVELDIRSERVICES_H_
@@ -63,7 +59,7 @@ tDirStatus				HLDSGetAttributeValuesFromRecordsByAttributeValues( const tDirRefe
 tDirStatus				HLDSSetAttributeValue( const tDirReference inDirRef, tRecordReference inRecordRef, const char* inAttributeName,
 							char createIfNecessary, const char* inAttributeValue );
 tDirStatus				HLDSSetAttributeValues( const tDirReference inDirRef, tRecordReference inRecordRef, const char* inAttributeName,
-							char createIfNecessary, const char** inAttributeValues, unsigned long inNumValues );
+							char createIfNecessary, const char** inAttributeValues, UInt32 inNumValues );
 tDirStatus				HLDSSetAttributeCFValues( const tDirReference inDirRef, tRecordReference inRecordRef, const char* inAttributeName,
 							char createIfNecessary, CFArrayRef inAttributeValues );
 tDirStatus				HLDSSetBinaryAttributeValue( const tDirReference inDirRef, tRecordReference inRecordRef, const char* inAttributeName,
